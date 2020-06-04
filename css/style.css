@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%; 
+}
+*, *::before, *::after {
+  box-sizing: border-box;/*paddingを含んだwidth*/
+}
+
+body {
+	font-family: 'Noto Sans Japanese', serif;
+	background-color: #CC9966;
+}
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+	padding: 30px 0;
+
+}
+
+.button:hover{
+  background-color:#FF6699; 
+}
+
+.button{
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  border-radius:  25px;
+  background-color: #FF3366;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+header{
+	padding-left:20px;
+}
+header h1,p{
+	 display: inline; 
+}
+header img{
+	width: 30%;
+}
+header p {
+	margin: 0 20px;
+}
+.main{
+	width: 80%;
+	margin: 0 auto;
+
+}
+.mainVisual{
+		width: 100%;
+}
+
+.block1,.block2,.block3,.block4,.block5,footer{
+		margin-top: 70px;
+}
+
+.block1{
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 40px; 
+}
+.block1 p{
+	font-size: 2.0rem;
+	line-height: 4.0;
+}
+
+.block2 {
+	background: url(../images/myface.png) left top no-repeat;
+	background-size: contain;
+	height: 200px;
+	width: 90%;
+	margin:  60 auto 0 auto;
+}
+.block2 h3{
+	font-size: 2.0rem;
+	display: inline;
+	padding-right:10px;
+}
+
+.profile{
+	font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+	margin-left:  40%;
+}
+
+.self{
+	display: block;
+	border: 1px dotted #000;
+	padding: 10px;
+	font-size: 1.2rem;
+}
+.block3{
+	text-align: center;
+}
+
+.block3 h3{
+	font-size: 4.0rem;
+}
+
+.block3 p{
+	font-size: 3.0rem;
+	color: red;
+}
+
+.block3 span{
+	font-size: 1.5rem;
+	color: black;
+}
+
+.block4 h3,.block5 h3 ,.block6 h3{
+	font-size: 4.0rem;
+	text-align: center;
+}
+.block4 ul,.block5 ul{
+	list-style: none;
+	font-size:  1.5rem;
+	text-align: center;
+}
+.block4 h4{
+	font-size: 3.0rem;
+}
+.block5 li{
+	line-height: 2.0;
+	padding: 10px 0;
+	text-decoration: underline;
+}
+
+.block6 table{
+	font-size: 2.0rem;
+}
+.attention{
+	text-align: center;
+	padding: 10px 0;
+}
+.sendButton{
+	margin-top: 20px;
+	text-align: center;
+}
+#status{
+	font-size: 2.0rem;
+}
+
+footer{
+	text-align: center;
+}
+
+@media(max-width: 945px){
+ .block1 p{
+	font-size: 1.5rem;
+	line-height: 3.0;
+	}
+	.profile{
+	margin-left: 50%;
+	}
+	.profileButton{
+		font-size: 1.0rem;
+	}
+}
+@media(max-width: 740px){
+.block2 h3{
+	font-size: 1.5rem;
+	display: block;
+}
+.profileButton{
+	display: none;
+}
+.self{
+	font-size: 1.2rem;
+}
+.block6 table{
+	font-size: 1.5rem;
+}
+}
+@media(max-width: 640px){
+	.profile{
+	margin-left: 60%;
+	}
+	.self{
+		width: 120%;
+	}
+}
+
+@media(max-width: 550px){
+	.wrapper{
+	width: 100%;
+	}
+	header img{
+		width: 40%;
+	}
+	header p {
+	font-size: 0.9rem;
+	margin-left: 10px;
+	}
+	.block1,.block2,.block3,.block4,.block5,footer{
+		margin-top: 30px;
+	}	
+	.block2{
+		background-image: none;
+	}
+	.profile{
+		margin-left: 0px; 
+		width:100%;
+	}
+	.block3 h3,.block4 h3,.block5 h3,.block6 h3{
+		font-size: 2.5rem;
+	}
+	.block3 p{
+		font-size: 1.5rem;
+		color: red;
+	}
+	.block3 span{
+		font-size: 0.7rem;
+		color: black;
+	}
+	.block4 h4{
+		font-size: 2.0rem;
+	}
+}
+@media(max-width: 450px){
+	header p {
+	font-size: 0.7rem;
+	margin-left: 6px;
+	}
+	.block1 p{
+	font-size: 1.2rem;
+	line-height: 2.0;
+	}
+	.block4 ul,.block5 ul{
+	font-size:  1.0rem;
+	}
+}
+@media(max-width: 380px){
+header p {
+	display: none;
+}
+input{
+width:60%;
+font-size:0.6em;
+}
+textarea{
+	width:90%;
+}
+}
+
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta name="keyword" content="話し相手,聞いてほしい,愚痴,話したい,悩み,">
+<meta charset="utf-8"/>
+<title>一緒に話しませんか？talking with me</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+<script type="text/javascript" src="./jquery/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/reservation.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<header>
+	<h1><img src="images/logo.png" alt="お手頃価格で手軽!前日予約も可能なお話し相手サービスtalkwithme"></h1>
+	<p>愚痴,悩み,たわいもない話…。何でも聞かせてください</p>
+</header>
+		<img src="images/mainVisual.jpg" alt="talkwithme" class="mainVisual">
+<div class="main">
+	<div class="block1">
+		<p>仲良い人、近い人だからこそ話せないことってありませんか？<br/>
+			私もそうでした。でも、誰かに話すことで救われる時もあると思うんです。</p>
+	</div>
+	<div class="block2">
+		<section class="profile">
+		<h3>話し相手Profile</h3><a class="button profileButton" href="#sendFrom">お話を聞いてほしい</a>
+		<p class="self">名前:SAKI<br/>
+		職業:学生<br/>
+		好きなこと:食べること、話を聞くことが大好き。<br/>
+		趣味:水族館に行くこと<br/>
+		カウンセリングやコンサルを勉強中。すこしでも誰かの役に立ちたいと思い、talkwithmeを開始。<br/>
+		これまでにアパレル店員を行っていたため、ファッションのお悩みをぜひ♪<br/>
+		</p>
+		</section>
+	</div>
+	<div class="block3">
+		<h3>料金システム</h3>
+		<div><img src="images/plan.png" width="80%"></div>
+		<p><span>ご利用は原則30分になります。30分以上をご希望の場合は、ご相談ください。</span><br/>
+		交通費と飲食代だけ！現地払いで安心</p>
+	</div>
+	<div class="block4">
+		<h3><strong>"talkwithme"</strong>の選ばれる3つの理由</h3>
+		<ul>
+			<li>
+				<h4>1,なんといっても仕切りが低い!!</h4>
+				悩み事があっても、カウンセリングを受けるほどじゃないしな。でも、この気持ちもやもやする。<br/>
+				軽い食事や飲み物を飲みながら、気軽にお話できる場を提供しています。<br/>
+				前日予約も可能。あなたの時間に合わせます。
+			</li>
+			<li>
+				<h4>2,料金が圧倒的に安い!!</h4>
+				<img src="images/price.png" width="80%"/>
+			</li>
+			<li>
+				<h4>3,学生からの視点からアドバイス!!</h4>
+				娘さんとの接し方に困っている、若い彼女がほしい、採用担当になったけど、学生との関わり方など。<br/>
+				学生だから答えられること、学生ならではの言葉がそこにあります。
+			</li>
+		</ul>
+	</div>
+	<div class="block5">
+		<h3>お話した方の声</h3>
+		<ul>
+			<li>
+				<p>
+					30分話した後は、新たな刺激をもらったなと感じました。<br/>お話のテンポがよくて、普段あまり話さない僕もいっぱい話してしまいました。笑(20代男性)
+				</p>
+			</li>
+			<li>
+				<p>
+					お昼のちょっとした時間にお話して、孫と話してるみたいでとても楽しかったです。<br/>お話していると私も若返ってような気がしました。また利用したいです。(60代女性)
+				</p>
+			</li>
+			<li>
+				<p>いろいろと悩んでいた時に相談したら、とても勇気をもらいました。<br/>RIKAさんは私と真摯に向き合ってくれて、励ましてくれて、励ましの天才かと思いました。(20代女性)
+				</p>
+			</li>
+		</ul>
+	</div>
+	<div class="block6" id="sendFrom">
+	<h3>問い合わせフォーム</h3>
+	<table border="1" align="center" >
+		<tr><th>名前(必須)</th><td><input type="text" id="name" size="50" /></td></tr>
+		<tr><th>ふりがな(必須)</th><td><input type="text" id="kana" size="50" /></td></tr>
+		<tr><th>携帯電話番号(必須)</th><td><input type="tel" id="tel" size="50" /></td></tr>
+		<tr><th>メールアドレス(必須)</th><td><input type="email" id="email"size="50"/></td></tr>
+		<tr><th>確認用メールアドレス(必須)</th><td><input type="email" id="confirmEmail"size="50"/></td></tr>
+		<tr>
+			<th>希望日時/場所・問い合わせ内容(必須)</th>
+			<td>
+				<textarea name="example2" cols="30" rows="10" id="free"></textarea>
+			</td>
+		</tr>
+	</table>
+	<div class="attention">注意事項:全角半角のスペースは入れないでください。携帯電話番号は全角数字はご使用できません。</div>
+	<div class="sendButton"><button id="send" class="button">メッセージ送信する</button></div>
+	<p id="status"></p>
+	</div>
+</div>
+<footer>
+	<p>© 2016 SAKI</p>
+</footer>
+</div>
+</body>
